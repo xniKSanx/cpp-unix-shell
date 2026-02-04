@@ -223,13 +223,3 @@ smash/
 - Job IDs assigned as `max(existing_ids) + 1`, tracked in a boolean array for O(1) lookup
 
 ---
-
-## Academic Notice
-
-This project was developed for an Operating Systems course. If you're a student in a similar course, please develop your own solution — the learning comes from working through the problems yourself.
-
----
-
-## License
-
-See [LICENSE](LICENSE) file. Check your institution's academic integrity policy before publishing coursework publicly.
