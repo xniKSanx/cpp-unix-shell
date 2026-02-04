@@ -1,0 +1,18 @@
+# Build artifacts
+*.o
+*.obj
+smash
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug
+*.dSYM/
