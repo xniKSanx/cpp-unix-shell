@@ -1,4 +1,4 @@
-# smash — Small Shell
+# Small Shell
 
 A Unix-like command-line shell implemented in C++ demonstrating core operating systems concepts: process management, job control, signal handling, and inter-process communication.
 
