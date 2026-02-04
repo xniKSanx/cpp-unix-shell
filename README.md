@@ -2,15 +2,6 @@
 
 A Unix-like command-line shell implemented in C++ demonstrating core operating systems concepts: process management, job control, signal handling, and inter-process communication.
 
-> Developed for Operating Systems (234123) at Technion — Israel Institute of Technology
-
-> ⚠️ **Platform Notes**:
-> - **Linux**: Works with system g++
-> - **macOS**: Requires Homebrew GCC (`brew install gcc`). Apple Clang will not work.
-> - **Windows**: Not supported (use WSL)
-
----
-
 ## Overview
 
 **smash** reads commands in an interactive loop, executes built-in commands in-process, and runs external commands via `fork` + `exec`. It implements background job control, I/O redirection, pipes, and signal handling — all standard Unix shell behaviors.
@@ -114,6 +105,14 @@ A Unix-like command-line shell implemented in C++ demonstrating core operating s
 | **macOS** | Homebrew GCC-15 | ✅ Works |
 | **macOS** | Apple Clang | ❌ Won't compile |
 | **Windows** | — | Use WSL |
+
+
+> ⚠️ **Platform Notes**:
+> - **Linux**: Works with system g++
+> - **macOS**: Requires Homebrew GCC (`brew install gcc`). Apple Clang will not work.
+> - **Windows**: Not supported (use WSL)
+
+---
 
 Some features use Linux-specific APIs (`/proc` filesystem, network ioctls). On macOS, these commands will compile but may not function correctly at runtime: `watchproc`, `netinfo`, `unsetenv`.
 
